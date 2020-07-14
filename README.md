@@ -1,11 +1,10 @@
-# MapzenGo 
-Pokemon Go clone using Unity3D, Mapzen & OpenStreetMap
+# MapzenGo or NextzenGo
+Map style loading using NextZen and Unity3D
 
-Latest blog post about the state of MapzenGo Project;
-http://barankahyaoglu.com/dev/new-job-new-project-new-horizons/
+This is fixed or workable version of original MapzenGo by Baran Kahyaoğlu (http://barankahyaoglu.com/dev/). Big kudos to him and to anyone who worked on this project!
 
-Website: http://barankahyaoglu.com/dev/    
-Twitter: http://www.twitter.com/brnkhy
+You need get nextzen api key and use it-> https://developers.nextzen.org/keys
+
 
 ![alt tag](http://i.imgur.com/KoN8OoR.png)
 

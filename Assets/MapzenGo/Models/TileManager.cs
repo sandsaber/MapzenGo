@@ -17,8 +17,9 @@ namespace MapzenGo.Models
         [SerializeField] public int Zoom = 16;
         [SerializeField] public float TileSize = 100;
 
-        protected readonly string _mapzenUrl = "http://tile.mapzen.com/mapzen/vector/v1/{0}/{1}/{2}/{3}.{4}?api_key={5}";
-        [SerializeField] protected string _key = "vector-tiles-5sBcqh6"; //try getting your own key if this doesn't work
+        protected readonly string _mapzenUrl = "https://tile.nextzen.org/tilezen/vector/v1/all/{0}/{1}/{2}.{3}?api_key={4}";
+        //get your key https://developers.nextzen.org/keys
+        [SerializeField] protected string _key = ""; //try getting your own key if this doesn't work
         protected string _mapzenLayers;
         [SerializeField] protected Material MapMaterial;
         protected readonly string _mapzenFormat = "json";
@@ -114,7 +115,7 @@ namespace MapzenGo.Models
 
         protected virtual void LoadTile(Vector2d tileTms, Tile tile)
         {
-            var url = string.Format(_mapzenUrl, _mapzenLayers, Zoom, tileTms.x, tileTms.y, _mapzenFormat, _key);
+            var url = string.Format(_mapzenUrl, Zoom, tileTms.x, tileTms.y, _mapzenFormat, _key);
             Debug.Log(url);
             ObservableWWW.Get(url)
                 .Subscribe(
