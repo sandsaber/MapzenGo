@@ -5,6 +5,7 @@ This is fixed or workable version of original MapzenGo by Baran Kahyaoğlu (http
 
 You need get nextzen api key and use it-> https://developers.nextzen.org/keys
 
+PS> Im used Unity 2020.1b14 for this project. Be aware.
 
 ![alt tag](http://i.imgur.com/KoN8OoR.png)
 
